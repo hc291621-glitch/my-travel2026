@@ -305,12 +305,56 @@
   const uid = () => Math.random().toString(36).slice(2, 10);
 
   const defaultData = () => ({
-    tripTitle: '我的旅行計畫',
-    destination: '',
-    startDate: '',
-    endDate: '',
+    tripTitle: '2026年7月 大阪自由行',
+    destination: '日本大阪',
+    startDate: '2026-07-18',
+    endDate: '2026-07-23',
     days: [
-      { id: uid(), label: 'Day 1', activities: [] }
+      {
+        id: uid(), label: 'Day 1（07/18 六）',
+        activities: [
+          { id: uid(), time: '12:00', place: '關西機場、下榻飯店', note: '' },
+          { id: uid(), time: '18:00', place: '心齋橋（固力果跑跑人）、道頓堀', note: '晚餐：吉伊卡哇拉麵豚 心齋橋店｜體驗預約：https://www.kkday.com/zh-tw/product/268084' },
+        ],
+      },
+      {
+        id: uid(), label: 'Day 2（07/19 日）',
+        activities: [
+          { id: uid(), time: '09:00', place: '難波八阪神社、黑門市場', note: '' },
+          { id: uid(), time: '12:00', place: 'NAMBA Parks', note: '' },
+          { id: uid(), time: '18:00', place: '法善寺橫丁', note: '' },
+        ],
+      },
+      {
+        id: uid(), label: 'Day 3（07/20 一）',
+        activities: [
+          { id: uid(), time: '09:00', place: '京都一日遊：嵐山竹林、渡月橋、嵯峨野觀光鐵道', note: '' },
+          { id: uid(), time: '12:00', place: '清水寺、伏見稻荷大社、吉伊卡哇mogumogu本舗', note: '營業至17:30，來不及就算了' },
+          { id: uid(), time: '', place: '備案路線', note: '伏見稻荷大社、吉伊卡哇mogumogu本舗／祇園花見小路、八坂神社、二年坂、三年坂、清水寺' },
+        ],
+      },
+      {
+        id: uid(), label: 'Day 4（07/21 二）',
+        activities: [
+          { id: uid(), time: '09:00', place: '勝尾寺', note: '' },
+          { id: uid(), time: '12:00', place: '上方浮世繪館、浮世繪版畫製作體驗', note: '14:00 中級體驗，需先預約kkday：https://www.kkday.com/zh-tw/product/271518' },
+          { id: uid(), time: '18:00', place: '通天閣、阿倍野HARUKAS', note: '' },
+        ],
+      },
+      {
+        id: uid(), label: 'Day 5（07/22 三）',
+        activities: [
+          { id: uid(), time: '09:00', place: '大阪城公園（天守閣、豐國神社等）', note: '' },
+          { id: uid(), time: '18:00', place: '梅田藍天大廈', note: '' },
+        ],
+      },
+      {
+        id: uid(), label: 'Day 6（07/23 四）',
+        activities: [
+          { id: uid(), time: '12:00', place: '關西機場返台', note: '' },
+          { id: uid(), time: '', place: '備案（若還有時間）', note: '美國村、四大天王寺' },
+        ],
+      },
     ],
     packing: [],
     budget: [],
